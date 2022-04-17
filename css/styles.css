@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/*
+    Project 2
+    Author: Chung Lai Poon
+    Student: 300346372
+    Date:   2021-03-01  
+    Filename: style.css
+*/
+
+
+/* 
+   HTML and Body Styles 
+*/
+*{
+    width: 100%;
+} 
+html {
+   margin-top: 1em;
+   width: 100%;
+	font-family: Tahoma, Geneva, sans-serif;
+   
+}
+
+body {
+	/* margin-left: 1%;	
+   margin-left: 1%; */
+   min-height: 100%;  
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1024px;  
+   width: 100%;
+}
+
+
+/* 
+   Body Header & Footer Styles
+*/
+ header {
+	text-align: center;	
+   font-size: 1.2em;
+	width: 100%;
+}
+
+img#profile {
+   display: inline;
+   width: 80%;
+
+}
+
+
+/* 
+   Horizontal Navigation and Bottom Styles 
+*/
+
+nav.horizontal, nav.bottom {
+	height: auto;
+	width: 100%;
+}
+
+nav.horizontal ul, nav.bottom ul {
+	text-align: center; 
+	 width: 90%;
+}
+
+nav.horizontal li, nav.bottom li {
+	font-family: 'Comic Sans MS', cursive; 
+	font-size: 1.4em;
+	line-height: 2em;
+	list-style-type: none;	
+	width: 100%;
+}
+
+nav.horizontal ul li a, nav.bottom ul li a {
+	color:black;
+	width: 100%;
+   text-decoration:none;
+}
+
+
+/* 
+   Section Styles
+*/
+section#top {
+   margin: 20px;
+   text-align: center;
+}
+
+ section#outer {
+   margin: 10px;
+   text-align: center;
+}
+
+section#outer article h1 {
+   font-size: 1.1em;
+   margin: 5px;
+   text-align: center;
+}
+
+section#inner article p {
+   font-size: 1.1em;
+   margin: 8px;
+}
+
+
+/* 
+   Article Styles 
+*/
+article {
+   margin: 0.8em;
+}
+
+article#contact {
+   margin: 30px;
+}
+
+article#contact h1 {
+   font-size: 1.2em;
+   margin: 5px;
+   text-align: center;
+}
+
+article#contact p {
+   font-size: 1.1em;
+   margin: 5px;
+}
+
+
+/* 
+   Footer Styles 
+*/
+footer > nav.left {
+   margin: 1em;
+   font-size: 0.6em;
+   float: left;
+   width: 33%;
+}
+
+footer > nav.right {
+   margin: 1em;
+   font-size: 0.6em;
+   float: right;
+   width: 33%;
+}
+
+
+
+

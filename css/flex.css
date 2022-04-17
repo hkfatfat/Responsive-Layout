@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/*
+    Project 2
+    Author: Chung Lai Poon
+    Student: 300346372
+    Date:   2021-03-01  
+    Filename: flex.css
+*/
+
+
+/* 
+    Base Flex Styles 
+*/
+body {
+    display: flex;
+    flex-flow: row wrap;
+ }
+
+ 
+ header, footer {
+    width: 100%;
+ }
+
+ nav.student, nav.left {
+    text-align: center;	
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin-left: 1em;
+  
+}
+ section#outer {
+    flex: 3 1 2px;
+ }
+
+ section#inner {
+    display: flex;
+    flex-flow: row wrap;
+ }
+ 
+    nav.bottom{
+    display:none;
+}
+
+/* 
+   Tablet Styles: 768px or above 
+*/
+ @media only screen and (min-width: 768px) {
+
+    img#profile {
+        float: right;
+        width: 40%;
+        margin-left: 2em;
+        margin-right: 2em;
+     }
+
+     section#top {
+      text-align: left;
+     }
+     
+     
+     nav.horizontal ul {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 40px;
+        width: 65%; 
+        margin-left: 15%;
+     }
+  
+     nav.horizontal ul li {
+        flex: 1 1 auto;
+     }
+    
+     section#inner {
+        display: flex;
+        flex-flow: row wrap;
+     }
+     section#inner article {
+        flex: 1 1 309px;
+     }
+
+     article#contact {
+        margin-left: 10em;
+        margin-right: 10em;
+     }
+
+    nav.right{
+        display: none;
+    }
+     nav.bottom{
+        display:unset;
+     }
+
+     nav.bottom ul {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 40px;
+        width: 65%; 
+        margin-left: 15%;
+        font-size: 0.6em;
+     }
+
+      nav.bottom {
+        float: right;
+        width: 50%;
+        margin-left: 2em;
+        
+    }
+
+}
+
+/* 
+    Desktop Styles: 768px or above 
+*/
+ @media only screen and (min-width: 1024px) {
+
+    nav.student, nav.left {
+        text-align: left;	
+        display: flex;
+        flex-flow: row nowrap;
+        width: 20%;
+        margin-left: 1em;
+        float: left;
+        font-size: 0.9em;
+    }
+    nav.horizontal {
+        float: right;
+        width: 50%;
+        margin-left: 2em;
+        
+    }
+
+    nav.horizontal ul{
+        display: flex;
+        flex-flow: row nowrap;
+        height: 40px;
+        font-size: 0.6em;
+    }
+ 
+    article#contact {
+        margin-left: 10em;
+        margin-right: 10em;
+        }
+     
+    section#inner article {
+        flex: 3 1 309px;
+    }
+
+    
+}
